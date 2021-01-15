@@ -8,7 +8,7 @@ class ArtystaPlusInstrument
 {
 public:
     ArtystaPlusInstrument(const Artysta& a_, const T& i_) : a{a_}, i{i_} {}
-    unsigned koncert() {return i.liczbaUczestnikow(a.getSluchacze());}
+    unsigned koncert() {return i.liczbaUczestnikow(a);}
 private:
     Artysta a;
     T i;
