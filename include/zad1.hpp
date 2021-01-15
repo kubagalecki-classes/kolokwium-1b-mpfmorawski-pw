@@ -11,6 +11,7 @@ class Artysta
 public:
     Artysta() : pseudonim{"Anonim"}, liczba_sluchaczy{0} {}
     Artysta(const std::string& p_, unsigned l_) : pseudonim{p_}, liczba_sluchaczy{l_} {}
+    ~Artysta() = default;
 
     virtual void graj(std::ostream& stream) const
     {
