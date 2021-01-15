@@ -7,8 +7,8 @@ template<typename T>
 class ArtystaPlusInstrument
 {
 public:
-    ArtystaPlusInstrument(const Artysta& a_, const T& i_) : a{a}, i{i} {}
-    unsigned koncert() {return i.liczbaUczestnikow(static_cast<unsigned int>(a.getSluchacze()));}
+    ArtystaPlusInstrument(const Artysta& a_, const T& i_) : a{a_}, i{i_} {}
+    unsigned koncert() {return i.liczbaUczestnikow(a.getSluchacze());}
 private:
     Artysta a;
     T i;
