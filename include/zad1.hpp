@@ -19,7 +19,7 @@ public:
     }
 
     const std::string& getPseudonim() const {return pseudonim;}
-    const unsigned getSluchacze() const {return liczba_sluchaczy;}
+    unsigned getSluchacze() const {return liczba_sluchaczy;}
 
 
 private:
